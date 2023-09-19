@@ -1,48 +1,21 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import hungry from "../assets/portfolio/hungry.png";
+import travelx from "../assets/portfolio/travelx.png";
+
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
-      code: 'https://github.com/jesusglezt27/hungryhives-server',
-      demo: 'https://google.com'
+      src: hungry,
+      backend: 'https://github.com/jesusglezt27/hungryhives-server',
+      frontend: 'https://github.com/jesusglezt27/hungryhives-client'
     },
     {
       id: 2,
-      src: reactParallax,
-      code: 'https://github.com/jesusglezt27/hungryhives-server',
-      demo: 'https://github.com/jesusglezt27/hungryhives-server'
-    },
-    {
-      id: 3,
-      src: navbar,
-      code: 'https://github.com/jesusglezt27/hungryhives-server',
-      demo: 'https://github.com/jesusglezt27/hungryhives-server'
-    },
-    {
-      id: 4,
-      src: reactSmooth,
-      code: 'https://github.com/jesusglezt27/hungryhives-server',
-      demo: 'https://github.com/jesusglezt27/hungryhives-server'
-    },
-    {
-      id: 5,
-      src: installNode,
-      code: 'https://github.com/jesusglezt27/hungryhives-server',
-      demo: 'https://github.com/jesusglezt27/hungryhives-server'
-    },
-    {
-      id: 6,
-      src: reactWeather,
-      code: 'https://github.com/jesusglezt27/hungryhives-server',
-      demo: 'https://github.com/jesusglezt27/hungryhives-server'
+      src: travelx,
+      backend: 'https://github.com/jesusglezt27/travelx-server',
+      frontend: 'https://github.com/jesusglezt27/travelx-client'
     },
   ];
 
@@ -65,7 +38,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, code, demo }) => (
+          {portfolios.map(({ id, src, backend, frontend }) => (
             <div key={id} className=" shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -74,14 +47,14 @@ const Portfolio = () => {
               />
               <div className="flex items-center justify-center">
                 <button className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
-                        onClick={() => redirectToCode(demo)}
+                        onClick={() => redirectToCode(backend)}
                 >
-                  Demo
+                  Backend
                 </button>
                 <button className="px-6 py-3 w-1/2 m-4 duration-200 hover:scale-105"
-                        onClick={() => redirectToCode(code)}                
+                        onClick={() => redirectToCode(frontend)}                
                 >
-                  Code
+                  Frontend
                 </button>
               </div>
             </div>
