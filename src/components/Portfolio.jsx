@@ -1,6 +1,7 @@
 import React from "react";
 import hungry from "../assets/portfolio/hungry.png";
 import travelx from "../assets/portfolio/travelx.png";
+import hackman from "../assets/portfolio/hackmans.png";
 
 
 const Portfolio = () => {
@@ -16,6 +17,11 @@ const Portfolio = () => {
       src: travelx,
       backend: 'https://github.com/jesusglezt27/travelx-server',
       frontend: 'https://github.com/jesusglezt27/travelx-client'
+    },
+    {
+      id: 3,
+      src: hackman,
+      demo: 'https://glowing-gelato-b2a9ef.netlify.app/'
     },
   ];
 
@@ -38,31 +44,45 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, backend, frontend }) => (
-            <div key={id} className=" shadow-md shadow-gray-600 rounded-lg">
-              <img
-                src={src}
-                alt=""
-                className="rounded-md duration-200 hover:scale-105"
-              />
-              <div className="flex items-center justify-center">
-                <button className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
-                        onClick={() => redirectToCode(backend)}
-                >
-                  Backend
-                </button>
-                <button className="px-6 py-3 w-1/2 m-4 duration-200 hover:scale-105"
-                        onClick={() => redirectToCode(frontend)}                
-                >
-                  Frontend
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
+        {portfolios.map(({ id, src, backend, frontend, demo }) => (
+  <div key={id} className=" shadow-md shadow-gray-600 rounded-lg">
+    <img
+      src={src}
+      alt=""
+      className="rounded-md duration-200 hover:scale-105"
+    />
+    <div className="flex items-center justify-center">
+      {backend && (
+        <button
+          className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+          onClick={() => redirectToCode(backend)}
+        >
+          Backend
+        </button>
+      )}
+      {frontend && (
+        <button
+          className="px-6 py-3 w-1/2 m-4 duration-200 hover:scale-105"
+          onClick={() => redirectToCode(frontend)}
+        >
+          Frontend
+        </button>
+      )}
+      {demo && (
+          <button
+            className="px-6 py-3 w-1/2 m-4 duration-200 hover:scale-105"
+            onClick={() => redirectToCode(demo)}
+          >
+            Demo
+          </button>
+      )}
       </div>
     </div>
-  );
+  ))}
+</div>
+</div>
+</div>
+);
 };
 
 export default Portfolio;
