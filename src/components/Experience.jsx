@@ -4,10 +4,14 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
-import nextjs from "../assets/nextjs.png";
-import graphql from "../assets/graphql.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+import mongodb from "../assets/mongodblogo.png";
+import typescript from "../assets/typescript.png";
+import sql from "../assets/sqllogo2.png";
+import nodejs from "../assets/nodejs.png";
+
+
 
 const Experience = () => {
   const techs = [
@@ -36,27 +40,33 @@ const Experience = () => {
       style: "shadow-blue-600",
     },
     {
-      id: 5,
-      src: nextjs,
-      title: "Next JS",
-      style: "shadow-white",
-    },
-    {
       id: 6,
-      src: tailwind,
-      title: "Tailwind",
-      style: "shadow-sky-400",
+      src: github,
+      title: "GitHub",
+      style: "shadow-gray-400",
     },
     {
       id: 7,
-      src: graphql,
-      title: "GraphQL",
-      style: "shadow-pink-400",
+      src: mongodb,
+      title: "MongoDB",
+      style: "shadow-gray-400",
     },
     {
       id: 8,
-      src: github,
-      title: "GitHub",
+      src: typescript,
+      title: "TypeScript",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 9,
+      src: sql,
+      title: "SQL",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 10,
+      src: nodejs,
+      title: "SQL",
       style: "shadow-gray-400",
     },
   ];
