@@ -8,7 +8,7 @@ import github from "../assets/github.png";
 import mongodb from "../assets/mongodblogo.png";
 import typescript from "../assets/typescript.png";
 import sql from "../assets/sqllogo2.png";
-import nodejs from "../assets/nodejs.png";
+import nodejsss from "../assets/nodejs.png";
 
 
 
@@ -64,8 +64,8 @@ const Experience = () => {
     },
     {
       id: 8,
-      src: nodejs,
-      title: "SQL",
+      src: nodejsss,
+      title: "NodeJS",
       style: "shadow-gray-400",
     },
   ];
