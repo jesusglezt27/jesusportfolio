@@ -40,19 +40,19 @@ const Experience = () => {
       style: "shadow-blue-600",
     },
     {
-      id: 6,
+      id: 5,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
     },
     {
-      id: 7,
+      id: 6,
       src: mongodb,
       title: "MongoDB",
       style: "shadow-gray-400",
     },
     {
-      id: 8,
+      id: 7,
       src: typescript,
       title: "TypeScript",
       style: "shadow-gray-400",
@@ -64,7 +64,7 @@ const Experience = () => {
       style: "shadow-gray-400",
     },
     {
-      id: 10,
+      id: 8,
       src: nodejs,
       title: "SQL",
       style: "shadow-gray-400",
