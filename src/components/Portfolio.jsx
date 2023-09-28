@@ -2,6 +2,7 @@ import React from "react";
 import hungry from "../assets/portfolio/hungry.png";
 import travelx from "../assets/portfolio/travelx.png";
 import hackman from "../assets/portfolio/hackmans.png";
+import techbooks from "../assets/portfolio/techbooks.png";
 
 
 const Portfolio = () => {
@@ -20,6 +21,11 @@ const Portfolio = () => {
     },
     {
       id: 3,
+      src: techbooks,
+      backend: 'https://github.com/jesusglezt27/techbook-server',
+      frontend: 'https://github.com/jesusglezt27/travelx-client'    },
+    {
+      id: 4,
       src: hackman,
       demo: 'https://glowing-gelato-b2a9ef.netlify.app/'
     },
