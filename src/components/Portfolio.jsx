@@ -23,7 +23,7 @@ const Portfolio = () => {
       id: 3,
       src: techbooks,
       backend: 'https://github.com/jesusglezt27/techbook-server',
-      frontend: 'https://github.com/jesusglezt27/travelx-client'    },
+      frontend: 'https://github.com/jesusglezt27/techbook-client'    },
     {
       id: 4,
       src: hackman,
